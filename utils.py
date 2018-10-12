@@ -1,10 +1,7 @@
 import torch
 import numpy as np
 import h5py
-import foolbox
-import copy
 import os
-import h5py
 from scipy import misc
 
 IMG_EXTENSIONS = ['.JPEG', '.jpg', '.jpeg', '.png', '.ppm', '.bmp', '.pgm', '.tif']
@@ -188,9 +185,3 @@ def read_train_images(input_dir):
                 break
 
     return np.array(data_list, dtype=np.float32), np.array(label_list, dtype=np.float32)
-
-
-
-
-if __name__ == "__main__":
-    print("Test")
